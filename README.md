@@ -12,7 +12,7 @@ Cypher is a Python-based voice assistant designed to help users perform various 
 
 ## Requirements
 
-- Python 3.x
+- Python
 - SpeechRecognition
 - pyttsx3
 - pyaudio

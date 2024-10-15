@@ -3,7 +3,7 @@ import webbrowser
 import pyttsx3
 import musicLibrary
 import requests
-from openai import OpenAIError
+from openai import OpenAI
 from gtts import gTTS
 import pygame
 import os
@@ -39,7 +39,7 @@ def speak(text):
 
 
 def aiProcess(command):
-    client = OpenAIError(api_key = "sk-VOkleE2Xrqif43yja8dDSoSz6ZfnvFRoAkNYTeks-qT3BlbkFJ87_orFgetkc9k99jyrjTujKoUp7hyEGEQKtPrIFnQA",
+    client = OpenAI(api_key = "sk-VOkleE2Xrqif43yja8dDSoSz6ZfnvFRoAkNYTeks-qT3BlbkFJ87_orFgetkc9k99jyrjTujKoUp7hyEGEQKtPrIFnQA",
     )
 
     completion = client.chat.completions.create(
